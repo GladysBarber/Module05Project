@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset="UTF-8">
+<title>Favorite Classic Films</title>
+<!--
+Author:  Gladys Barber
+Creation Date:  May 13, 2020
+Modification Date:  June 12, 2020
+Purpose:  Provide suggested movies for classic movie lovers.
+Input:  Users name and contact information.
+Output:  Movie Synapse
+-->
+
+<!--CSS Styling-->
+<style>
+* {
+	padding: 0;
+	margin: 10px;
+}
+nav {
+	background-color: #D5DCE4;
+	height: 50px;
+	}
+	
+nav ul {
+	border: 1 px solid black;
+	height: 50px;
+	width: 100%;
+	margin: 0 auto;
+	}
+
+nav ul li {
+	list-style-type: none;
+	width: 150px;
+	float: left;
+	border-right: 1px solid #CCC;
+	text-align: center;
+}
+
+li a {
+	text-decoration: none;
+	color: black;
+	line-height: 50px;
+	display: block;
+	}
+	
+li a:hover {
+	background-color: yellow;
+	color: green;
+	}
+	
+li a:visited {
+	background-color: #F0F8FF;
+	color: #0070C0;
+}
+	
+</style>
+
+</head>
+<html>
+<!--HTML Code-->
+<body>
+<div id="result"></div>
+
+
+<script>
+//Store
+localStorage.lastname = "Barber";
+//Retrieve
+document.getElementById("result").innerHTML = localStorage.lastname;
+</script>
+
+<!--Header with Logo-->
+	<table width="100%" height="48" align="center" border="1" cellspacing="0" cellpadding="0"
+		bgcolor="#0070C0" text="white">
+		<tbody><tr align="center" class="style38" valign="middle" bgcolor="#0070C0">
+		<td style="width:25%"> <img src="images/GladysLogo.jpg" alt="Gladys Logo"></style></td>
+		<!--<tr style="width:128px;height:128px;bgcolor="#0070C0">-->
+		<td><h1><center><p style="color:white">My Favorite Classic Movies</p></center></h1></td>
+		</tr>
+	</table>
+
+<!--Page Title-->
+<div data-role="content">
+<p><h1><center>Info</center></h1></p>
+<br>
+
+<!--Back Button-->
+			<form>
+				<input type="button" value="Back" onclick="history.go(-1)">
+			</form>
+<!--Back Button
+     <form>
+		<button style="height:80px;width:120px">
+        <input type="button" value="Back" onclick="form.back()"></button>
+     </form>-->
+
+<!--Navigation-->	
+<div data-role="content">
+		<ul data-role="listview" data-theme="c">
+			<li><a href="themeroller.html">Theme Roller</a></li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="romance.html">Romance</a></li>
+			<li><a href="comedy.html">Comedy</a></li>
+			<li><a href="mysterysuspense.html">Mystery &amp; Suspense</a></li>
+			<li><a href="drama.html">Drama</a></li>
+			<li><a href="musicals.html">Musicals</a></li>
+			<li><a href="westerns.html">Westerns</a></li>
+			<li><a href="info.html">Info</a></li>
+			<li><a href="grid.html">Grid</a></li>
+			<li><a href="form.html">Form</a></li>
+			<li><a href="panel.html">Panel</a></li>
+		</ul>
+</div>
+
+<br>
+    
+<!--Ordered List-->
+	<div id="info" data-role="page" data-theme="a" data-add-back-btn="true">
+		<div data-role="header" data-theme="a" data-add-back-btn="true"></div>
+	</div>
+
+<h2>Some of the movie catagories we will feature are:</h2>
+	<ol>
+	 <li>Romance</li>
+	 <li>Comedy</li>
+	 <li>Mysteries &amp; Suspense</li>
+	 <li>Drama</li>
+	 <li>Musicals</li>
+	 <li>Westerns</li>
+	</ol>
+<br>
+
+<!--Unordered List-->
+<h2>These are just some of the actors we will be featuring:</h2>
+	<ul>
+		<li>Betty Davis</li><img src="images/Davis.jpg" alt="Betty Davis">
+		<li>Claudette Colbert</li>
+		<li>Katharine Hepburn</li>
+		<li>Vivien Leigh</li>
+		<li>Ingrid Bergman</li>
+		<li>Susan Hayward</li>
+		<li>Gene Tierney</li>
+		<li>Deborah Kerr</li>
+		<li>Deborah Reynolds</li>
+		<li>Rosemary Clooney</li>
+		<li>Audrey Hepburn</li>
+		<li>Elizabeth Taylor</li>
+		<li>Grace Kelly</li>
+		<li>July Garland</li>
+		<li>Doris Day</li>
+		<li>Shirley McLaine</li>
+		<li>Humphrey Bogart</li>
+		<li>James Steward</li>
+		<li>Cary Grant</li>
+		<li>Henry Fonda</li>
+		<li>Charles Boyer</li>
+		<li>John Wayne</li><img src="images/JohnWayne.jpg" alt="John Wayne">
+		<li>Robert Mitchum</li>
+		<li>James Cagney</li>
+		<li>Spencer Tracy</li>
+		<li>Gary Cooper</li>
+		<li>Clark Gable</li>
+		<li>Rock Hudson</li>
+		<li>Kirk Douglas</li>
+		<li>Gregory Peck</li>
+		<li>Robert Young</li>
+		<li>Bing Crosby</li>
+		<li>Danny Kaye</li>
+		<li>Fred Astaire</li>
+		<li>Gene Kelly</li>
+		<li>Clint Eastwood</li>
+	</ul>
+<br>
+<br>
+
+<!--Type in name and search for web page-->	
+<h2>My Web Pages</h2>
+
+	<input type="text" id="myInput"
+	onkeyup="myFunction()"
+	placeholder="Search for page..."
+	title="Type in a name"
+		<h3>Type in a page name.</h3>
+<!--Unordered List-->
+<ul id="myUL">
+		<li><a href="home.html">Home</a></li>
+		<li><a href="romance.html">Romance</a></li>
+		<li><a href="comedy.html">Comedy</a></li>
+		<li><a href="mysterysuspense.html">Mystery &amp; Suspense </a></li>
+		<li><a href="drama.html">Drama</a></li>
+		<li><a href="musicals.html">Musicals</a></li>
+		<li><a href="westerns.html">Westerns</a></li>
+		<li><a href="form.html">Form</a></li>
+		<li><a href="info.html">Info</a></li>
+		
+<script>
+function myFunction() {
+			var input, filter, ul, li, a, i, txtValue;
+			input = document.getElementById("myInput");
+			
+			filter = input.value.toUpperCase();
+			ul = document.getElementById("myUL");
+			li = ul.getElementsByTagName("li";
+				for (i= 0; i < li.length; i++) {
+			a = li[i].getElementsByTagName("a") [0];
+			txtValue = a.textContent || a.innerText;
+			
+			if
+			(txtValue.toUpperCase().indexOf(filter) > -1 {
+				li[i].style.display = "none"'
+				}
+			}
+		}
+</script>
+<br>
+<br>
+
+<!--Fill in the blank form-->	
+<form action="/action_page.php">
+<h2>Tell us who you are:</h2>
+<br>
+<form>
+	<table>
+		<tr>
+			<td>
+				Name:
+			</td>
+			<td>
+				<input type="text" placeholder="Name" name="">
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				Password:
+			</td>
+			<td>
+				<input type="Password" placeholder="Password" name="">
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				Gender:
+			</td>
+			<td>
+				<input type="radio" name="Gener">Male
+				<input type="radio" name="Gender">Female
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				Email:			
+			</td>
+			<td>
+				<input type="mail" placeholder="Email" name="">
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				Phone:
+			</td>
+			<td>
+				<input type="phone" placeholder="phone" name="">
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<input type="Submit" value="Submit" name="">
+			</td>
+		</tr>
+	</table>
+	</form>
+
+</div>
+
+</div>
+	
+</body>
+<!--Footer-->
+<div data-role="footer" data-theme="a">
+	  <center><h4>Gladys Barber &copy; 2020</h4></center>
+	</div>
+<br>
+<br>
+
+</html>
